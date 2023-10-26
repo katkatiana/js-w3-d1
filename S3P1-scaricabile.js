@@ -48,9 +48,11 @@ console.log("Since this number is not what we wanted ", finalNumber);
 /* SCRIVI QUI LA TUA RISPOSTA */
 let reverseString = function (a) {
   let arrEpi = a.split("");
-  arrEpi.reverse();
-  let b = arrEpi.join("");
-  return b;
+  let arrReversed = ""
+  for (i = arrEpi.length -1; i >= 0; i--) {
+    arrReversed += arrEpi[i]
+  }
+  return arrReversed;
 }
 
 let finalValue = reverseString("EPICODE")
